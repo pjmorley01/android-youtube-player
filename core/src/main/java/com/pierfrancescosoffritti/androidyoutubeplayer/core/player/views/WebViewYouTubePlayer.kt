@@ -128,6 +128,7 @@ internal class WebViewYouTubePlayer constructor(
   @SuppressLint("SetJavaScriptEnabled")
   private fun initWebView(playerOptions: IFramePlayerOptions, videoId: String?) {
     settings.apply {
+      domStorageEnabled = true
       javaScriptEnabled = true
       mediaPlaybackRequiresUserGesture = false
       cacheMode = WebSettings.LOAD_DEFAULT
